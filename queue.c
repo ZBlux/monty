@@ -9,9 +9,8 @@ void _queue(stack_t **head, unsigned int counter)
 {
 	(void)head;
 	(void)counter;
-	bus.lifi = 1;
+       	bus.lifi = 1;
 }
-
 /**
  * addqueue - add node to the tail stack
  * @n: new_value
@@ -20,8 +19,7 @@ void _queue(stack_t **head, unsigned int counter)
 */
 void addqueue(stack_t **head, int n)
 {
-	stack_t *new_node, *aux;
-
+       	stack_t *new_node, *aux;
 	aux = *head;
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
@@ -42,7 +40,3 @@ void addqueue(stack_t **head, int n)
 	}
 	else
 	{
-		aux->next = new_node;
-		new_node->prev = aux;
-	}
-}
